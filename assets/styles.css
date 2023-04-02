@@ -30,6 +30,7 @@ nav h1 {
     background-color: aqua;
     position: relative;
     right: 16px;
+    padding-left: 36  px;
 }
 
 .navbar ul {
@@ -53,6 +54,83 @@ Header
 
 */
 
-img {
+.banner {
     width: 100%;
+    height: 25rem
+}
+
+/* 
+
+Main
+
+*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 300px;
+}
+
+.small-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+
+.first-image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-size: cover;
+}
+
+.first-image:hover {
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+}
+
+.second-image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-size: cover;
+}
+
+.second-image:hover {
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+}
+/* .images { */
+    /* display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-areas:
+    "a a"
+    "b c"
+    "d e";
+    gap: 10px;
+} */ 
+
+/* .first-image {
+    grid-column: 1 / -1
+}
+
+.second-image {
+    grid-column: 1 / 2
+} 
+*/
+
+.left-column {
+    border-right: 2px solid blue;
+} 
+ 
+Footer 
+
+
+.footer {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
