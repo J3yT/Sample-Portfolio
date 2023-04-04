@@ -80,12 +80,12 @@ Main
 main {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 300px ;
+    grid-template-rows: 300px 1fr 200px;
 }
 
 /* 
 
-Left Column
+Left Columns
 
 */
 
@@ -105,12 +105,12 @@ h2 {
 
 /* 
 
-Right Column
+Right Columns
 
 */
 
 .right-column {
-    margin-left: 32px
+    margin: 0 0 0 32px
 }
 
 p {
@@ -119,24 +119,28 @@ p {
     margin-top: 24px;
 }
 
+#image {
+    border: 7px solid #950740;
+}
 
 .first-image {
-    width: 800px;
-    height: 500px;
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    background-image: url("./images/gtr.jpg");
     background-size: cover;
     margin: 0 auto 20px;
     display: block
 }
 
 .first-image:hover {
-    background-image: linear-gradient(rgba(0,0,0,.5),#950740),url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.2),#950740),url("./images/gtr.jpg");
 }
 
 .small-containers {
     display: grid;
     justify-content: center;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 500px 500px;
     gap: 15px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -144,52 +148,58 @@ p {
 }
 
 .second-image {
-    width: 400px;
-    height: 220px;
-    margin:0 auto 20px;
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    width: 100%;
+    height: 280px;
+    margin:0 auto;
+    background-image: url("");
     background-size: cover;
 }
 
 .second-image:hover {
-    background-image: linear-gradient(rgba(0,0,0,.5),#950740),url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.2),#950740),url(".");
 }
 
 .third-image {
-    width: 400px;
-    height: 220px;
-    margin: 0 auto 20px;
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    width: 100%;
+    height: 280px;
+    margin: 0 auto;
+    background-image: url("");
     background-size: cover;
 }
 
 .third-image:hover {
-    background-image: linear-gradient(rgba(0,0,0,.5),#950740),url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.2),#950740),url("");
 }
 
 .fourth-image {
-    width: 400px;
-    height: 220px;
+    width: 100%;
+    height: 280px;
     margin: 0 auto 20px;
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-image: url("");
     background-size: cover;
 }
 
 .fourth-image:hover {
-    background-image: linear-gradient(rgba(0,0,0,.5),#950740),url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.2),#950740),url("");
 }
 
 .fifth-image {
-    width: 400px;
-    height: 220px;
+    width: 100%;
+    height: 280px;
     margin:0 auto 20px;
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-image: url("");
     background-size: cover;
 }
 
 .fifth-image:hover {
-    background-image: linear-gradient(rgba(0,0,0,.5),#950740),url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.2),#950740),url("");
 }
+
+/* 
+
+blocks on images
+
+*/
 
 
 /* 
@@ -199,7 +209,15 @@ footer
 */
 
 .footer-list {
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     list-style-type: none;
+    padding-top: 64px
+}
+
+.footer-list li {
+    color: #C3073F;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration-thickness: 5px;
 }
