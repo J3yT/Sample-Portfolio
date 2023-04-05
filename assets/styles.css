@@ -330,19 +330,61 @@ footer
     h4.one {
         font-size: 16px;
         bottom: 108px;
+        display: none;
     }
 
     .bottom {
         font-size: 16px;
-
+        display: none;
     }
 
     .top {
         font-size: 16px;
+        display: none
     }
     }
 
 @media screen and (max-width:576px) {
-   
 
+    nav h1, a, h2, li{
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .first-image {
+        max-width: 240px;
+        width: 120px;
+        height: 80px;
+    }
+    .second-image {
+        max-width: 240px;
+        width: 120px;
+        height: 80px;
+    }
+
+    .third-image {
+        max-width: 240px;
+        width: 120px;
+        height: 80px;
+    }
+
+    .fourth-image {
+        max-width: 240px;
+        width: 120px;
+        height: 80px;
+    }
+
+    .fifth-image {
+        max-width: 240px;
+        width: 120px;
+        height: 80px;
+    }
+    
 }
