@@ -9,6 +9,8 @@ This repository is a showcase of my portfolio sample to show to possible future 
 ![alt text](assets/images/Screenshot%20portfolio(1).png)
 ![alt text](assets/images/screenshot%20portfolio(2).png)
 
+https://j3yt.github.io/Sample-Portfolio/ Link to deployed webpage
+
 ## Credits
 
 https://developer.mozilla.org/en-US/ used for a better understanding of syntax for html and css elements
